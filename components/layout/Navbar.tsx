@@ -34,7 +34,7 @@ function Navbar() {
               <span className="hamburger__top-bun"></span><span className="hamburger__bottom-bun"></span>
             </button>
           </div>
-          <div className={`w-full sm:w-auto  font-bold text-black dark:text-white self-end space-x-6 sm:self-center sm:flex flex-col sm:flex-row items-center    
+          <div className={`w-full sm:w-auto  font-bold text-white self-end space-x-6 sm:self-center sm:flex flex-col sm:flex-row items-center    
                         ${Open ? "flex " : "hidden "}`}>
             <a href="#proyects" className="text-center font-simplex text-xl items-center hover:text-blue-400">
               <span className="font-bold font-simplex">Proyects</span>

@@ -24,7 +24,7 @@ export default function Home() {
           el: vantaRef.current,
           THREE,
           color: 0x777777,
-          backgroundColor: (theme === 'light') ? 0xF1F0EF : 0x111827,
+          backgroundColor: 0x111827,
           points: 9.00,
           maxDistance: 11.00,
           spacing: 16.00
@@ -41,7 +41,7 @@ export default function Home() {
     <>
       <Navbar/>
       <Layout home >
-        <section id="main" ref={vantaRef} className="w-full h-screen m-0 p-0 bg-gray-900 dark:text-white ">
+        <section id="main" ref={vantaRef} className="w-full h-screen m-0 p-0 text-white ">
           <div className="absolute top-1/3 px-1 lg:px-50 xl:px-72 md:px-36 sm:px-16 text-center mx-auto">
             <div>
               <h3 className=" md:text-4xl font-simplex text-3xl pb-3 ">
