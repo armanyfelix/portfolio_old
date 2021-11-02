@@ -47,9 +47,11 @@ function Contact() {
                 })
             );
         }
-        return () => {
-            if (vantaEffect) vantaEffect.destroy();
-        };
+
+        //  return () => {
+        //      if (vantaEffect) vantaEffect.destroy();
+        //  };
+
     }, [vantaEffect]);
     return (
         <section id="contact" ref={vantaRef} className=" lg:py-1 py-24 lg:h-screen bg-gray-800 antialiased">

@@ -31,9 +31,11 @@ export default function Home() {
         })
       );
     }
+
     // return () => {
     //   if (vantaEffect) vantaEffect.destroy();
     // };
+    
   }, [vantaEffect]);
   return (
     <>
