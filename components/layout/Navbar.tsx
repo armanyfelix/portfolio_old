@@ -46,7 +46,7 @@ function Navbar() {
               <span className="font-simplex font-bold">Contact</span>
             </a>
           </div>
-          <ThemeIcon />
+          {/* <ThemeIcon /> */}
 
         </nav>
         <div onClick={() => setOpen(!Open)}
