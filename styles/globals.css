@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(212, 212, 212);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(30, 78, 216, 0.9) 0%, rgba(102, 97, 241, 0.9) 50%, rgba(124, 58, 237, 0.9) 100%);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
