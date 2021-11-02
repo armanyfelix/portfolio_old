@@ -12,6 +12,7 @@ import { useTheme } from 'next-themes'
 
 
 export default function Home() {
+
   const { theme } = useTheme();
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
@@ -30,9 +31,9 @@ export default function Home() {
         })
       );
     }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
+    // return () => {
+    //   if (vantaEffect) vantaEffect.destroy();
+    // };
   }, [vantaEffect]);
   return (
     <>
@@ -45,7 +46,7 @@ export default function Home() {
                 Hi, my name is Armany
               </h3>
               <h1 className=" items-middle font-simplex font-bold text-4xl mt-3 md:text-6xl   ">
-                I like build and design websites
+                I'm a Full Stack Developer
               </h1>
             </div>
           </div>
