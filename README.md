@@ -1,7 +1,8 @@
-# Next.js + Tailwind CSS Example
+# This is my personal portfolio
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Here is were I show all my work and experience in web development i been dont in the last years, I made this portfolio with what a thing are the latest and more powerfull technologies available right now.
 
+The new next.js 12 features are working in this page.
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
 ## Preview
