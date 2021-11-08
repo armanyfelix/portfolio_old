@@ -37,7 +37,7 @@ const Data = [
       source: "https://github.com/armanyfelix/CRM",
       description: "A simple client relationship manager who work with a indexed database in the browser.",
       image: "/img/crm.png",
-      tecs: "A going to do it with nextjs, firebase and recoil very soon"
+      tecs: " I going to do it with nextjs, firebase and recoil very soon"
   },
   {
       name: "Image search",

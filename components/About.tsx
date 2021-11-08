@@ -30,7 +30,7 @@ function About() {
                     </p>
                     <br />
                     <p className="text-justify lg:text-lg md:text-base text-sm text-white">
-                        Now 2 years have passed since I had my first client as a freelancer, I have worked making web sites
+                        Now 3 years have passed since I had my first client as a freelancer, I have worked making web sites
                         for small businesses and other freelancers who need to grow their business, I offer them accessible but
                         scalable and flexible software so they can improve their service while they business grows.
                     </p>
