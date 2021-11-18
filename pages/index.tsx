@@ -1,6 +1,6 @@
 import About from '../components/About'
 import Layout from '../components/layout'
-import Proyects from '../components/jobs/Proyects'
+import Proyects from '../components/proyects/Proyects'
 import Contact from '../components/Contact'
 import Arrow from '../styles/arrow.module.css'
 import Navbar from '../components/layout/Navbar'
@@ -11,10 +11,10 @@ import Skills from '../components/Skills'
 import { useTheme } from 'next-themes'
 
 
+
 export default function Home() {
 
-  const { theme } = useTheme();
-  const [vantaEffect, setVantaEffect] = useState(0);
+  const [vantaEffect, setVantaEffect]: any = useState(0);
   const vantaRef = useRef(null);
 
   useEffect(() => {
@@ -31,15 +31,14 @@ export default function Home() {
         })
       );
     }
-
-    // return () => {
-    //   if (vantaEffect) vantaEffect.destroy();
-    // };
-    
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
   }, [vantaEffect]);
+  
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Layout home >
         <section id="main" ref={vantaRef} className="w-full h-screen m-0 p-0 text-white ">
           <div className="absolute top-1/3 px-1 lg:px-50 xl:px-72 md:px-36 sm:px-16 text-center mx-auto">

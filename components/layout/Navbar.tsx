@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useTheme } from "next-themes";
 import Link from 'next/link';
 import { useRouter } from 'next/dist/client/router';
 
@@ -34,44 +33,26 @@ function Navbar() {
               <span className="hamburger__top-bun"></span><span className="hamburger__bottom-bun"></span>
             </button>
           </div>
-          <div className={`w-full sm:w-auto  font-bold text-white self-end space-x-6 sm:self-center sm:flex flex-col sm:flex-row items-center    
+          <div className={`w-full sm:w-auto  font-bold text-white self-end sm:space-x-6 sm:self-center sm:flex flex-col sm:flex-row items-center    
                         ${Open ? "flex " : "hidden "}`}>
-            <a href="#proyects" className="text-center font-simplex text-xl items-center hover:text-blue-400">
+            <a onClick={() => setOpen(false)} href="#proyects" className="text-center font-simplex text-xl items-center hover:text-blue-400">
               <span className="font-bold font-simplex">Proyects</span>
             </a>
-            <a href="#about" className=" text-center text-xl font-simplex items-center hover:text-indigo-400">
+            <a onClick={() => setOpen(false)} href="#about" className=" text-center text-xl font-simplex items-center hover:text-indigo-400">
               <span className="font-simplex font-bold">About</span>
             </a>
-            <a href="#contact" className="text-center text-xl font-simplex items-center hover:text-purple-400">
+            <a onClick={() => setOpen(false)} href="#contact" className="text-center text-xl font-simplex items-center hover:text-purple-400">
               <span className="font-simplex font-bold">Contact</span>
             </a>
           </div>
           {/* <ThemeIcon /> */}
 
         </nav>
-        <div onClick={() => setOpen(!Open)}
-          className={`${Open ? 'fixed' : 'hidden'} top-0 left-0 w-full h-screen bg-black opacity-30 z-40`} >
+        <div onClick={() => setOpen(false)}
+          className={`${Open ? 'fixed' : 'hidden'} top-0 left-0 w-full h-screen bg-black opacity-50 z-40`} >
         </div>
       </header>
       <style jsx>{`
-                @media (max-width: 576px) {
-                    .content {
-                        padding-top: 51px;
-                    }
-                } 
-                @media (min-width: 577px) {
-                .pt-scroll {
-                    padding-top: 51px;
-                }
-                .nav-sticky {
-                    position: fixed!important;
-                    min-width: 100%;
-                    top: 0;
-                    box-shadow: 0 2px 4px 0 rgba(255, 0, 0, .1);
-                    transition: all .25s ease-in;
-                    z-index: 1;
-                }
-                }
                 /* HAMBURGER MENU */
                 .hamburger {
                 cursor: pointer;
@@ -117,23 +98,23 @@ function Navbar() {
   )
 }
 
-const ThemeIcon = () => {
-  const { theme, setTheme } = useTheme();
-  const router = useRouter()
+// const ThemeIcon = () => {
+//   const { theme, setTheme } = useTheme();
+//   const router = useRouter()
 
-  const handleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-    router.reload();
-  };
-  return (
-    <button onClick={() => handleTheme()} className=" outline-none border-none decoration-slice">
-      {theme === 'light' ? (
-        <div className="w-6 h-6 rounded-full bg-gradient-to-tl from-red-600 via-red-60  to-yellow-600 shadow-sun hover:animate-pulse"></div>
-      ) : (
-        <div className="w-6 h-6 rounded-full bg-gradient-to-bl from-gray-600  to-gray-700 shadow-moon hover:animate-pulse"></div>
-      )}
-    </button>
-  );
-};
+//   const handleTheme = () => {
+//     setTheme(theme === 'dark' ? 'light' : 'dark');
+//     router.reload();
+//   };
+//   return (
+//     <button onClick={() => handleTheme()} className=" outline-none border-none decoration-slice">
+//       {theme === 'light' ? (
+//         <div className="w-6 h-6 rounded-full bg-gradient-to-tl from-red-600 via-red-60  to-yellow-600 shadow-sun hover:animate-pulse"></div>
+//       ) : (
+//         <div className="w-6 h-6 rounded-full bg-gradient-to-bl from-gray-600  to-gray-700 shadow-moon hover:animate-pulse"></div>
+//       )}
+//     </button>
+//   );
+// };
 
 export default Navbar;

@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/jobs/Data.module.js"  ],
+, "components/proyects/proyectsInfo.module.js"  ],
   "exclude": [
     "node_modules"
   ]

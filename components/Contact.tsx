@@ -54,7 +54,7 @@ function Contact() {
 
     }, [vantaEffect]);
     return (
-        <section id="contact" ref={vantaRef} className=" lg:py-1 py-24 lg:h-screen bg-gray-800 antialiased">
+        <section id="contact" ref={vantaRef} className=" lg:py-1 py-24 lg:h-screen bg-gray-900 antialiased">
             <div className="flex w-full min-h-screen justify-center items-center">
                 <div className="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0 backdrop-filter backdrop-blur border-2 border-opacity-30 border-gray-400 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white">
                     <div className="flex flex-col justify-between">

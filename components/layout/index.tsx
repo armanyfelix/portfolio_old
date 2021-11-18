@@ -4,10 +4,10 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface Props {
-  title?: string,
-  children?: any,
-  description?: string,
-  home?: boolean
+    title?: string,
+    children?: any,
+    description?: string,
+    home?: boolean
 }
 
 Layout.defaultProps = {
@@ -15,15 +15,13 @@ Layout.defaultProps = {
     description: "My personal web portfolio to fine a nice job like a software engineer",
 }
 
-function Layout({ children, title, description, home }:Props) {
+function Layout({ children, title, description, home }: Props) {
     return (
         <div className="box-border p-0 m-0">
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <link rel="icon" href="/favicon.ico" />
-                {/* <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossOrigin="anonymous" /> */}
             </Head>
             {!home && (
                 <>

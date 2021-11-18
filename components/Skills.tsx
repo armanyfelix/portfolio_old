@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 function Skills() {
   return (
-    <section className="  md:p-10 p-4 bg-gray-800 lg:min-h-screen  justify-center items-center">
-      <div className=" mt-8 lg:mx-48 md:mx-28 ">
+    <section className="  md:p-10 p-4 bg-gray-900 lg:min-h-screen  justify-center items-center">
+      <div className=" mt-8 lg:mx-52 md:mx-28 ">
         <h1 className="text-3xl font-bold pb-10 text-center text-indigo-300">
-          Technologies I'm working with recently:
+          Technologies I'm working with:
         </h1>
         <div className="sm:flex text-indigo-50 mx-auto  justify-between">
           <ul className="list-none space-y-5 p-5">
