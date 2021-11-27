@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from "react";
-import GLOBE from "vanta/dist/vanta.net.min";
+import NET from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
 import Btn from '../styles/customBtn.module.css'
 import Input from '@material-tailwind/react/Input'
@@ -34,12 +34,12 @@ function Contact() {
         alert(result.status);
     };
 
-    const [vantaEffect, setVantaEffect] = useState(0);
+    const [vantaEffect, setVantaEffect] = useState<any>(0);
     const vantaRef = useRef(null);
     useEffect(() => {
         if (!vantaEffect) {
             setVantaEffect(
-                GLOBE({
+                NET({
                     el: vantaRef.current,
                     THREE,
                     color: 0x777777,
@@ -47,12 +47,12 @@ function Contact() {
                 })
             );
         }
-
-        //  return () => {
-        //      if (vantaEffect) vantaEffect.destroy();
-        //  };
+        return () => {
+            if (vantaEffect) vantaEffect.destroy();
+        };
 
     }, [vantaEffect]);
+
     return (
         <section id="contact" ref={vantaRef} className=" lg:py-1 py-24 lg:h-screen bg-gray-900 antialiased">
             <div className="flex w-full min-h-screen justify-center items-center">

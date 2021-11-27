@@ -21,40 +21,24 @@ function About() {
                     <Image src={me} width="320" height="320" alt="me"
                         className=" shadow-2xl  rounded-full" />
                 </div>
-                <div className="xl:w-2/3 ">
+                <div className="xl:w-2/3">
                     <span className="text-4xl text-indigo-300 font-bold">Hi, i'm Armany</span>
                     <p className="text-justify lg:text-lg md:text-base text-sm text-white">
-                        Since I was a child I have always liked technology and learn how to use it, I started
-                        in programming when I was 15 years old with c++ in high school, then I decided to study
-                        mechatronics engineering because I also had interests in learn about hardware but I never stop
-                        programming and keep learning new things on my own watching tutorials, that has always been
-                        like a hobby for me, just like that I started working on my own projects. After trying different
-                        technologies like c#, java, python, etc. in the end, what I have enjoyed the most and were and what
-                        I decided to dedicate to is web development with javascript, html and css.
+                        I started in programming when I was 15 years old with c++ in high school and I continue my studies in the career of TIC's engineering, the career don't was what I expected, so I decided to switch to Mechatronics engineering because I also had interests to learn about hardware. I never stop learning about software development by my own, building my own projects, reading and watching tutorials. After trying different technologies like java, python, in the end, what I have enjoyed the most is making thing for the internet with javascript, html and css.
                     </p>
                     <br />
                     <p className="text-justify lg:text-lg md:text-base text-sm text-white">
-                        Now 3 years have passed since I had my first client as a freelancer, I have worked making web sites
-                        for small businesses and other freelancers who need to grow their business, I offer them accessible but
-                        scalable and flexible software so they can improve their service while they business grows.
+                        I have more of  2 years  working as a freelancer, I make websites and other freelancers, I offer them scalable and flexible software, so they can improve their service while their business grows.
                     </p>
                     <br />
                     <p className="text-justify lg:text-lg md:text-base text-sm text-white">
-                        I am applying for my first in a company as a full stack developer, I like to work with react or
-                        nextjs for the frontend and nodejs in the backend although I am always willing to use other frameworks and
-                        programming languages.
+                        Now I am applying for my first job in a company as a full stack developer, I like to work with react or nextjs for the frontend and nodejs in the backend although I am always willing to use other frameworks and programming languages.
                     </p>
                     <br />
                     <p className="text-justify lg:text-lg md:text-base text-sm text-white">
                         I really enjoy web development and build useful things to make the internet better and better.
+                    </p>
 
-                    </p>
-                    <br />
-                    <p className="text-justify lg:text-lg md:text-base text-sm text-white">
-                        <a href="#contact" className="cursor-pointer text-indigo-300 hover:text-indigo-400">
-                            Get in touch </a>
-                        if you want to know more about me.
-                    </p>
                 </div>
 
             </div>

@@ -1,5 +1,5 @@
 
-const ProyectsInfo = [
+const ProyectsData = [
   {
       name: "Website and Store",
       url: "https://omar-villatoro.netlify.app/",
@@ -50,4 +50,4 @@ const ProyectsInfo = [
   },
 ]
 
-module.exports = ProyectsInfo;
+module.exports = ProyectsData;
